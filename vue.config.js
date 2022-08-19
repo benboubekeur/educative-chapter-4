@@ -2,7 +2,6 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
-    disableHostCheck: true,
-    public: '*.educative.run'
+    allowedHosts: ['.educative.run', 'host2.com'],
   }
 })
